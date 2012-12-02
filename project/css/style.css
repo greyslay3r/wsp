@@ -4,3 +4,17 @@
 
 /* --- layout --- */
 
+body {background: #3f7;
+
+}
+
+
+form{
+	margin-left: 30%;
+}
+label {
+	color: white;
+	background: rgba(155,0,0,0.3);
+}
+input:focus {
+	background: #ff9;
