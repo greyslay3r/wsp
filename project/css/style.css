@@ -40,6 +40,10 @@ font-family: "Share Tech", sans-serif;
 	margin: 5px;
 }
 
+#main_pic img {
+	Max-width: 100%;
+}
+
 #contact {
 	position: absolute;
 	height: 115px;
@@ -83,6 +87,7 @@ label {
 }
 input:focus {
 	background: #ff9;
+}
 /* --------------------*/
 
 
