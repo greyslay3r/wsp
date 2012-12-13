@@ -8,7 +8,7 @@ body {
 max-width:940px;
 margin:24px auto;
 font-size: 110%;
-font-family: "Share Tech", sans-serif;
+font-family: "Helvetica", sans-serif;
 }
 
 
@@ -54,6 +54,9 @@ font-family: "Share Tech", sans-serif;
   padding: 10px;
 }
 
+#container p{
+	text-align:center;
+}
 
 #container img {
 	float: right;
@@ -75,9 +78,10 @@ font-family: "Share Tech", sans-serif;
 }
 #contact p{
 	color:white;
-	margin-left:45%;
+	margin-left:42%;
 	margin-top:25px;
 	padding-left:20px;
+	padding-right:20px;
 }
 
 #button {
@@ -85,7 +89,6 @@ font-family: "Share Tech", sans-serif;
 	top: 30px;
 	left: -3%;
 	font-size: 100%;
-	/*-moz-float: left;*/
 	margin-top: -10px;
 	margin-left: 6%;
 }
@@ -117,9 +120,6 @@ font-family: "Share Tech", sans-serif;
 	border-top-color: #26d117;
 	background:#26d117;
 } 
-
-
-
 
 #examples {
 	position: relative;
@@ -191,8 +191,6 @@ h2 {
 } 
 
 
-
-
 #nav{
 	background-color:black;
   border:1px solid black;
@@ -213,7 +211,6 @@ h2 {
 
 
 #nav a{
-	/*width:130px;*/
 	color: white;
 	background-color: black;
   	display:inline-block;
@@ -227,7 +224,7 @@ div ul li {
 }
 
 #examples h3{
-	margin:auto;
+	text-align:center;
 	color:white;
 }
 
@@ -255,7 +252,6 @@ footer p {
 footer ul li{
 	font-size:70%;
 	list-style-type: none;
-	/*overflow:hidden;*/
 	margin-left: 20px;
 	float:left; 
 	width:60px;
@@ -267,31 +263,160 @@ footer ul li{
 	padding:20px;
 	background: rgba(155,0,0,0.3);
 	}
+
+#about {
+	width:100%;
+	float:right;
+	margin-top: 0px;
+
+}
+
 #about img {
+	width:60%;
+	float:right;
+	Max-width: 100%;
+}
+
+/* ---inventory-----*/
+
+#inventory p {
+	background:#669acc;
+	padding:10px;
+}
+
+#inventory {
+	text-align:center;
+	width:100%;
+	color: white;
+}
+
+#inventory footer {
+	position:relative;
+	top: 300px;
+	left: -15%;
+	color:black;
+	
+}
+
+#inventory ul li {
+	padding-top:20px;
+	position:relative;
+	left:22%;
+	color: white;
+	border:solid black;
+	overflow: hidden;
+
+}
+/*----40 in store---*/
+#40in p {
+	background:red;
 	float:right;
 }
 
 
-/* form elements */
-form{
-	margin-left: 30%;
+/* ----  videos ----*/
+
+#videos p {
+	background:#669acc;
+	padding:30px;
 }
-label {
+
+#videos {
+	text-align:center;
+	width:100%;
 	color: white;
-	background: rgba(155,0,0,0.3);
 }
-input:focus {
-	background: #ff9;
+
+#videos footer {
+	position:relative;
+	top: 300px;
+	left: -15%;
+	color:black;
+	
 }
+
+#videos ul li {
+	padding-top:20px;
+	position:relative;
+	left:22%;
+	color: white;
+	border:solid black;
+	overflow: hidden;
+
+}
+
+/* form elements */
+
+h6 {
+	padding:20px;
+	font-size:140%;
+}
+
+#contact_info {
+	float:right;
+	position:relative;
+	top:30px;
+	left:-200px;
+	background: rgba(155,0,55,0.3);
+}
+
+#contact_info h4{
+	padding:30px;
+}
+
+input, textarea { 
+	padding: 9px;
+	border: solid 1px #E5E5E5;
+	outline: 0;
+	font: normal 13px/100% Verdana, Tahoma, sans-serif;
+	width: 200px;
+	background: #FFFFFF left top repeat-x;
+	background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, #EEEEEE), to(#FFFFFF));
+	background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px);
+	box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+	-moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+	-webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+	}
+
+textarea { 
+	width: 400px;
+	max-width: 400px;
+	height: 150px;
+	line-height: 150%;
+	}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus { 
+	border-color: #C9C9C9; 
+	-webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;
+	}
+
+.form label { 
+	margin-left: 10px; 
+	color: #999999; 
+	}
+
+.submit input {
+	width: auto;
+	padding: 9px 15px;
+	background: #617798;
+	border: 0;
+	font-size: 14px;
+	color: #FFFFFF;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	}
+
 /* --------------------*/
 
-
+ul li {
+	list-style-type: none;
+}
 
 /* -Media Queries - =====================================*/
 
 /* tablet portrait size to standad 960 (device & browswers) */
 	@media screen and (min-width:768px) and (max-width:959px) {
-		/*body {background: yellow;}*/
 		#example_thumbnails img{width:70%;height:70%;}
 		footer {font-size:75%}
 		footer ul li {width:50px;}
@@ -299,7 +424,6 @@ input:focus {
 }
 /* mobile landscape size to tablet portrait (device&browsers)*/
 	@media only screen and (min-width:480px) and (max-width:767px){
-		/*body {background: green;}*/
 		#content {font-size: 85%;}
 		#examples{display:none;}
 		#contact p{font-size:80%}
@@ -317,8 +441,6 @@ input:focus {
 		#marble_art {display:none;}
 		footer {display:none;}
 		#nav {display:none;}
-		
-		
 		#logo_mobile {display:block;}
 		#nav_mobile {display:inline;color:white;
 			background-color: black;
@@ -328,22 +450,14 @@ input:focus {
 		
 		#nav_mobile li{display:inline;}
 		#nav_mobile a {padding:35.8px;text-decoration: none;color:white;}
-		
 		#lower_nav_mobile li{display:inline;}
 		#lower_nav_mobile a {padding:44.4px;text-decoration: none;color:white;}
-	
 		#lower_nav_mobile {display:inline;color:white;
 			background-color: black;
   			display:inline-block;
   			padding:10px;
   			text-decoration: none;}
-		#container_mobile {display:block; background-color:#999944; height: 287px;font-size:100%;width:320px;}
-		
+		#container_mobile {display:block; background-color:#999944; height: 287px;font-size:100%;width:320px;text-align:center;}
 		#main_pic img{display:block;}
-		
-		/*body {background: silver;}*/
 		#example_thumbnails img{width:30%;height:30%;}
-
-		
-
 }
