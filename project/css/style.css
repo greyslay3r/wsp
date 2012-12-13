@@ -17,6 +17,21 @@ font-family: "Share Tech", sans-serif;
 	margin-top: 0px;
 }
 
+#logo_mobile {
+	display:none;
+}
+#container_mobile {
+	display:none;
+}
+#nav_mobile {
+	display:none;
+}
+
+#lower_nav_mobile {
+	display:none;
+}
+
+
 #logo {
 	max-width:100%
 }
@@ -119,10 +134,12 @@ font-family: "Share Tech", sans-serif;
 	height: 109px;
 	top: 463px;
 	left: 45.2%;
+	background: rgba(155,0,0,0.3);
+
 }
 
-#marble_art img{
-	max-width:100%;
+#marble_art img {
+	Max-width: 100%;
 }
 
 h2 { 
@@ -132,6 +149,48 @@ h2 {
    top: 5px; 
    left: 7%; 
 }
+
+#button1 {
+	position: absolute;
+	top: 80px;
+	left: 3%;
+	font-size: 100%;
+	/*-moz-float: left;*/
+	margin-top: -10px;
+	margin-left: 6%;
+}
+
+
+.button1 {
+	border-top: 1px solid black;
+	background: black;
+	background: -webkit-gradient(linear, left top, left bottom, from(black), to(#b18d5d));
+	background: -moz-linear-gradient(top,black, white);
+	padding: 5px 43px;
+	-webkit-border-radius: 39px;
+	-moz-border-radius: 39px;
+	border-radius: 39px;
+	-webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+	-moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+	box-shadow: rgba(0,0,0,1) 0 1px 0;
+	text-shadow: rgba(0,0,0,1) 0 1px 0;
+	color: #ffffff;
+	font-family: arial, sans serif;
+	text-decoration: none;
+	vertical-align: middle;
+}
+.button1:hover {
+	border-top-color:white;
+	background:white;
+	color:black;
+	text-decoration: none;
+}
+.button1ß:active {
+	border-top-color: #26d117;
+	background:#26d117;
+} 
+
+
 
 
 #nav{
@@ -159,11 +218,17 @@ h2 {
 	background-color: black;
   	display:inline-block;
   	padding:10px;
+  	text-decoration: none;
 }
 
 div ul li {
 	float: left;
 	margin-left: 3.275%;
+}
+
+#examples h3{
+	margin:auto;
+	color:white;
 }
 
 #example_thumbnails {
@@ -176,7 +241,34 @@ div ul li {
 }
 
 footer {
-	clear: both;
+	background-color:red;
+	position: relative;
+	top:50px;
+	left:60px;
+}
+
+footer p {
+	font-size:70%;
+	float:left;	
+}
+
+footer ul li{
+	font-size:70%;
+	list-style-type: none;
+	/*overflow:hidden;*/
+	margin-left: 20px;
+	float:left; 
+	width:60px;
+}
+
+
+/*----about ----*/
+#about p {
+	padding:20px;
+	background: rgba(155,0,0,0.3);
+	}
+#about img {
+	float:right;
 }
 
 
@@ -199,23 +291,57 @@ input:focus {
 
 /* tablet portrait size to standad 960 (device & browswers) */
 	@media screen and (min-width:768px) and (max-width:959px) {
-		body {background: blue;}
+		/*body {background: yellow;}*/
 		#example_thumbnails img{width:70%;height:70%;}
+		footer {font-size:75%}
+		footer ul li {width:50px;}
+		
 }
 /* mobile landscape size to tablet portrait (device&browsers)*/
 	@media only screen and (min-width:480px) and (max-width:767px){
-		body {background: green;}
+		/*body {background: green;}*/
 		#content {font-size: 85%;}
-		#example_thumbnails img{width:50%;height:50%;}
+		#examples{display:none;}
 		#contact p{font-size:80%}
-
-		footer   {border: 1px solid green ;}
+		#marble_art{left: 2%;}
+		footer{top: 150px;}
+		.button {padding: 20px 5px;}
+		footer p {display:none;}
 
 }
 /*  mobile portrait size to mobile landscape size (device & browsers)*/
 	@media only screen and (max-width:479px) {
 		#logo {display:none;}
-		body {background: silver;}
+		#container {display:none;}
+		#examples {display:none;}
+		#marble_art {display:none;}
+		footer {display:none;}
+		#nav {display:none;}
+		
+		
+		#logo_mobile {display:block;}
+		#nav_mobile {display:inline;color:white;
+			background-color: black;
+  			display:inline-block;
+  			padding:10px;
+  			text-decoration: none;}
+		
+		#nav_mobile li{display:inline;}
+		#nav_mobile a {padding:35.8px;text-decoration: none;color:white;}
+		
+		#lower_nav_mobile li{display:inline;}
+		#lower_nav_mobile a {padding:44.4px;text-decoration: none;color:white;}
+	
+		#lower_nav_mobile {display:inline;color:white;
+			background-color: black;
+  			display:inline-block;
+  			padding:10px;
+  			text-decoration: none;}
+		#container_mobile {display:block; background-color:#999944; height: 287px;font-size:100%;width:320px;}
+		
+		#main_pic img{display:block;}
+		
+		/*body {background: silver;}*/
 		#example_thumbnails img{width:30%;height:30%;}
 
 		
