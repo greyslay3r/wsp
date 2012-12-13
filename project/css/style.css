@@ -139,6 +139,8 @@ font-family: "Helvetica", sans-serif;
 }
 
 #marble_art img {
+	width:100%;
+	height:100%;
 	Max-width: 100%;
 }
 
@@ -420,7 +422,15 @@ ul li {
 		#example_thumbnails img{width:70%;height:70%;}
 		footer {font-size:75%}
 		footer ul li {width:50px;}
-		
+		#about img {width:60%;height:60%;}
+		#contact_info {font-size: 80%;clear:right; position: relative; left,-500px;top:10px;}
+		#contact_info h6 {padding:15px;}
+		#contact_info h4 {padding:25px;}
+		#inventory ul li {padding-top:15px;}
+		#inventory p {font-size:90%;}
+		#videos ul li {padding-top:15px;}
+		#videos p {font-size:90%;}
+
 }
 /* mobile landscape size to tablet portrait (device&browsers)*/
 	@media only screen and (min-width:480px) and (max-width:767px){
@@ -431,7 +441,15 @@ ul li {
 		footer{top: 150px;}
 		.button {padding: 20px 5px;}
 		footer p {display:none;}
-
+		#contact_info {font-size: 80%;clear:right; position: relative; left,100px;top:10px; left:30px}
+		#contact_info h6 {padding:10px;}
+		#contact_info h4 {padding:20px;}
+		.submit input {position:relative; top:10px; left:30px;}
+		#about img {width:60%;height:60%}
+		#inventory p {font-size:70%;padding:10px;}
+		#inventory ul li {left:30px;}
+		#videos p {font-size:70%;padding:10px;}
+		#videos ul li {left:30px;}
 }
 /*  mobile portrait size to mobile landscape size (device & browsers)*/
 	@media only screen and (max-width:479px) {
@@ -447,7 +465,6 @@ ul li {
   			display:inline-block;
   			padding:10px;
   			text-decoration: none;}
-		
 		#nav_mobile li{display:inline;}
 		#nav_mobile a {padding:35.8px;text-decoration: none;color:white;}
 		#lower_nav_mobile li{display:inline;}
@@ -459,5 +476,22 @@ ul li {
   			text-decoration: none;}
 		#container_mobile {display:block; background-color:#999944; height: 287px;font-size:100%;width:320px;text-align:center;}
 		#main_pic img{display:block;}
-		#example_thumbnails img{width:30%;height:30%;}
-}
+		#contact_info {font-size: 70%;clear:right; position: relative;left:-120px;top:0px;}
+		#contact_info h6 {padding:5px;}
+		#contact_info h4 {padding:8px;}
+		
+		#about img {width:60%;height:60%}
+		#inventory p {font-size:65%;padding:5px;}
+		#inventory ul li {left:5px;}
+		#videos p {font-size:65%;padding:5px;}
+		#videos ul li {left:5px;}
+		textarea { 
+			max-width: 200px;
+			height: 100px;
+			line-height: 100%;
+	}
+
+		
+		
+		
+		
