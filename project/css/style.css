@@ -309,14 +309,6 @@ footer ul li{
 	overflow: hidden;
 
 }
-/*----40 in store---*/
-#40in p {
-	background:red;
-	float:right;
-}
-
-
-/* ----  videos ----*/
 
 #videos p {
 	background:#669acc;
@@ -479,7 +471,6 @@ ul li {
 		#contact_info {font-size: 70%;clear:right; position: relative;left:-120px;top:0px;}
 		#contact_info h6 {padding:5px;}
 		#contact_info h4 {padding:8px;}
-		
 		#about img {width:60%;height:60%}
 		#inventory p {font-size:65%;padding:5px;}
 		#inventory ul li {left:5px;}
